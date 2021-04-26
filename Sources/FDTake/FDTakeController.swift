@@ -9,44 +9,6 @@ import Foundation
 import MobileCoreServices
 import UIKit
 
-/// User interface strings
-fileprivate enum FDTakeControllerLocalizableStrings: String {
-    /// Decline to proceed with operation
-    case cancel = "cancel"
-    
-    /// Option to select photo from library
-    case chooseFromLibrary = "chooseFromLibrary"
-    
-    /// Option to select photo from photo roll
-    case chooseFromPhotoRoll = "chooseFromPhotoRoll"
-    
-    /// There are no sources available to select a photo
-    case noSources = "noSources"
-    
-    /// Option to take photo using camera
-    case takePhoto = "takePhoto"
-    
-    /// Option to take video using camera
-    case takeVideo = "takeVideo"
-    
-    public func comment() -> String {
-        switch self {
-        case .cancel:
-            return "Decline to proceed with operation"
-        case .chooseFromLibrary:
-            return "Option to select photo/video from library"
-        case .chooseFromPhotoRoll:
-            return "Option to select photo from photo roll"
-        case .noSources:
-            return "There are no sources available to select a photo"
-        case .takePhoto:
-            return "Option to take photo using camera"
-        case .takeVideo:
-            return "Option to take video using camera"
-        }
-    }
-}
-
 /// A class for select and taking photos
 open class FDTakeController: NSObject /* , UIImagePickerControllerDelegate, UINavigationControllerDelegate*/ {
 
