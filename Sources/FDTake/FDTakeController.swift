@@ -110,6 +110,8 @@ open class FDTakeController: NSObject /* , UIImagePickerControllerDelegate, UINa
     /// Custom UI text (skips localization)
     open var takeVideoText: String? = nil
 
+  open var lastTakenMedia: String? = nil
+
 
     // MARK: - Private
 
@@ -165,6 +167,8 @@ open class FDTakeController: NSObject /* , UIImagePickerControllerDelegate, UINa
             return self.takePhotoText ?? bundleLocalization
         case .takeVideo:
             return self.takeVideoText ?? bundleLocalization
+        case .lastTakenMedia:
+            return self.lastTakenMedia ?? bundleLocalization
         }
     }
 
