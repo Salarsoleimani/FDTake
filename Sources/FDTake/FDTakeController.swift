@@ -112,7 +112,6 @@ open class FDTakeController: NSObject /* , UIImagePickerControllerDelegate, UINa
 
   open var lastTakenMedia: String? = nil
 
-
     // MARK: - Private
 
     private lazy var imagePicker: UIImagePickerController = {
@@ -168,7 +167,7 @@ open class FDTakeController: NSObject /* , UIImagePickerControllerDelegate, UINa
         case .takeVideo:
             return self.takeVideoText ?? bundleLocalization
         case .lastTakenMedia:
-            return self.lastTakenMedia ?? bundleLocalization
+          return self.lastTakenMedia ?? bundleLocalization
         }
     }
 
